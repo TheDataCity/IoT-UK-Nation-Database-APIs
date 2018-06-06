@@ -33,4 +33,6 @@ https://en.wikipedia.org/wiki/NUTS_statistical_regions_of_the_United_Kingdom
 
 To find all organisations located in the Leeds region, you may search using the NUTS3 code of "**UKE42**":
 https://api.iotuk.org.uk/iotOrganisation?nuts=UKE42
+
+You must use the full NUTS3 code for this lookup to work.  
  
