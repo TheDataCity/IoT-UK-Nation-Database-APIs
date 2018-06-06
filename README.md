@@ -4,6 +4,9 @@ The organisation end point can be accessed here: https://api.iotuk.org.uk/iotOrg
 
 The end point does not require any user authorisation.
 
+## Filters
+You must use a filter with the end point.  If you do navigate to the base URL you will receive a warning message advising you to apply a filter.
+
 The end point allows you to filter the IoT UK Nation database by the following fields:
  - Organisation postcode  (using `postcode=`)
  - Organisation town (using `town=`)
