@@ -13,6 +13,8 @@ The end point allows you to filter the IoT UK Nation database by the following f
  - Organisation sic code (using `sic=`)
  - Organisation founding year (using `year=`)
  - Organisation NUTS region (using `nuts=`)
+ - Organisation Westminster region (using `westminster=`)
+ - Organisation Local Authority region (using `la=`)
  
 For example, to find all IoT businesses in the town of Leeds, you may call the URL:
 https://api.iotuk.org.uk/iotOrganisation?town=Leeds
@@ -40,4 +42,24 @@ To find all organisations located in the Leeds region, you may search using the 
 https://api.iotuk.org.uk/iotOrganisation?nuts=UKE42
 
 You must use the full NUTS3 code for this lookup to work.  
+
+### Westminster regions
+The Westminster regions are defined in the National Statistics Postcode Lookup file.  To search for a westminster constituency, you will need to use the Westminster constituency code.  For example, to search for the Leeds Central constituency, you can use the code E14000777
+https://api.iotuk.org.uk/iotOrganisation?westminster=E14000777
+
+More details, and to find a list of Westminster region codes, please visit:
+https://data.gov.uk/dataset/7ec10db7-c8f4-4a40-8d82-8921935b4865/national-statistics-postcode-lookup-uk
+
+### Local Authority regions
+The Local Authority regions are defined in the National Statistics Postcode Lookup file.  To search for a local authority area, you need need to use the Local Authority code.  For example, to search for Leeds, you can use the code E08000035
+https://api.iotuk.org.uk/iotOrganisation?la=E08000035
+
+More details, and to find a list of Local Authority region codes, please visit:
+https://data.gov.uk/dataset/7ec10db7-c8f4-4a40-8d82-8921935b4865/national-statistics-postcode-lookup-uk
+
+### Geographic lookups
+The NUTS, Westminster and Local Authority geographies are provided as a convenience to the user in filtering the data on the assumption that the user would have access to the relevant codes to use.  The user may run a search for a postcode or a town and find the associated geographies returned in the data response from this endpoint.  Using this method may identify the relevant codes to search on for the user.
+
+
+
  
